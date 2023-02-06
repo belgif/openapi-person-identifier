@@ -22,3 +22,4 @@ definitions:
     description: "Social Security Identification Number issued by the National Register or CBSS"
     type: string
     pattern: '^\d{11}$'
+    example: "00000000196"
