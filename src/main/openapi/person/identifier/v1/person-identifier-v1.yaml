@@ -12,17 +12,16 @@ components:
       name: ssin
       required: true
       schema:
-        type: string
-        pattern: '^\d{11}$'
+        "$ref": "#/components/schemas/Ssin"
     SsinQueryParameter:
       description: Social Security Identification Number issued by the National Register or CBSS
       in: query
       name: ssin
       schema:
-        type: string
-        pattern: '^\d{11}$'
+        "$ref": "#/components/schemas/Ssin"
   schemas:
     Ssin:
       description: Social Security Identification Number issued by the National Register or CBSS
       type: string
       pattern: '^\d{11}$'
+      example: "00000000196"
