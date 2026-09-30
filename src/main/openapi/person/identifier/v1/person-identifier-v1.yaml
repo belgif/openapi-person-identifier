@@ -10,6 +10,7 @@ paths: {}
 components:
   parameters:
     SsinPathParameter:
+      # DEPRECATED: API providers should put SSINs in message body instead of URL (https://www.belgif.be/specification/rest/api-guide/resources.html#rule-sens-dat)
       description: Social Security Identification Number issued by the National Register or CBSS
       in: path
       name: ssin
@@ -17,6 +18,7 @@ components:
       schema:
         "$ref": "#/components/schemas/Ssin"
     SsinQueryParameter:
+      # DEPRECATED: API providers should put SSINs in message body instead of URL (https://www.belgif.be/specification/rest/api-guide/resources.html#rule-sens-dat)
       description: Social Security Identification Number issued by the National Register or CBSS
       in: query
       name: ssin
